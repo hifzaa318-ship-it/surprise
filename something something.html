@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+    text-align:center;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Glowing Heading */
+h1{
+    margin-top:60px;
+    font-size:38px;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 8px white; }
+    to{ text-shadow:0 0 18px #ff4d6d; }
+}
+
+/* Beating Heart */
+.heart{
+    font-size:70px;
+    animation: beat 1.2s infinite;
+}
+
+@keyframes beat{
+    0%{ transform:scale(1); }
+    50%{ transform:scale(1.2); }
+    100%{ transform:scale(1); }
+}
+
+/* Floating Hearts (Light Version) */
+.floating{
+    position:absolute;
+    bottom:-40px;
+    font-size:22px;
+    animation: floatUp 15s linear infinite;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-100vh);
+        opacity:0;
+    }
+}
+
+/* Buttons */
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    color:#ff4d6d;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff4d6d;
+    color:white;
+    transform:scale(1.08);
+}
+
+.no{
+    background:black;
+    color:white;
+}
+</style>
+
+<script>
+function moveNo(){
+    var btn = document.getElementById("noBtn");
+
+    btn.style.position = "absolute";
+    btn.style.top = Math.random()*250 + "px";
+    btn.style.left = Math.random()*250 + "px";
+
+    setTimeout(function(){
+        btn.style.position = "static";
+    },1200);
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="heart">❤️</div>
+
+<h1>Happy Valentine's Day Yashh 💕</h1>
+
+<p style="font-size:20px; width:85%; margin:auto;">
+You are my favorite person 🌎💖 <br><br>
+Every moment with you feels magical ✨ <br><br>
+You are the best ❤️ <br><br>
+Thank you for loving me the way you do 💖
+</p>
+
+<br><br>
+
+<button onclick="alert('I Loveeee Youuuuuuu So Muchhhh ❤️')">
+Click Me 💌
+</button>
+
+<br><br>
+
+<div style="margin-top:40px; font-size:24px;">
+Mitthu… Will You Be My Forever? 💍💖
+</div>
+
+<br>
+
+<button onclick="alert('YAYYYY ❤️ You Said YESSSS 💕 Forever Locked 💍')">
+YES 💘
+</button>
+
+<button id="noBtn" class="no" onmouseover="moveNo()">
+NO 😜
+</button>
+
+<br><br><br>
+
+<footer>
+Made with endless love by Your Headache 💗
+</footer>
+<br>
+<br>
+<!-- Only 2 Floating Hearts (Optimized) -->
+<div class="floating" style="left:30%; animation-delay:0s;">❤️</div>
+<div class="floating" style="left:25%; animation-delay:2s;">💖</div>
+<div class="floating" style="left:55%; animation-delay:2s;">💗</div>
+<div class="floating" style="left:75%; animation-delay:3s;">💘</div>
+<div class="floating" style="left:80%; animation-delay:5s;">❤️</div>
+
+
+</body>
+</html>
